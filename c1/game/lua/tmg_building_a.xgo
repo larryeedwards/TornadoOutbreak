@@ -1,0 +1,43 @@
+weather = {}
+shadow = {}
+
+function on_postload()
+  weather[1] = childbyoid(245)
+  weather[2] = childbyoid(246)
+  weather[3] = childbyoid(247)
+
+  shadow[1] = childbyoid(254)
+  shadow[2] = childbyoid(257)
+  shadow[3] = childbyoid(258)
+end
+
+function on_label(label)
+  if label == "shadwocaster" then
+    weather[1].curphase = 1
+    weather[2].curphase = 1
+    weather[3].curphase = 1
+    shadow[1]:dispatchlabel("addtoworld") 
+    shadow[2]:dispatchlabel("addtoworld") 
+    shadow[3]:dispatchlabel("addtoworld") 
+
+  elseif label == "noshadow" then
+    weather[1].curphase = 0
+    weather[2].curphase = 0
+    weather[3].curphase = 0
+    shadow[1]:dispatchlabel("removefromworld") 
+    shadow[2]:dispatchlabel("removefromworld") 
+    shadow[3]:dispatchlabel("removefromworld") 
+  end
+end
+
+function on_break(break_state)
+  if break_state == 3 then
+    weather[3].curphase = 0
+    shadow[3]:dispatchlabel("removefromworld")
+  elseif break_state == 4 then
+    weather[1].curphase = 0
+    weather[2].curphase = 0
+    shadow[1]:dispatchlabel("removefromworld")
+    shadow[2]:dispatchlabel("removefromworld") 
+  end
+end

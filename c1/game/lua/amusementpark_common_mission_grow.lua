@@ -349,3 +349,7 @@ end
 function on_triggerenter(triggerobject)
 
   gomgr.getbyoid(548):dispatchlabel("slowdown")
+  
+  function on_rockhit(tornado)
+	logline("on_rockhit")
+	gameplaymgr.currentgameplaymodule:dispatchlabel("on_rockhit")

@@ -1,0 +1,71 @@
+function on_label(label)
+  if label == "setup" then
+	--                                         
+	
+	--                         
+    childbyoid(307):addtoworld()
+    this:addtoworld()
+
+    --                                             
+    childbyoid(308):dispatchlabel(label)
+    childbyoid(308):dispatchlabel("opened")
+
+  elseif label == "found" then
+    --                                                                                
+
+    --                                         
+    childbyoid(308):dispatchlabel(label)
+ 
+  elseif (label == "show") then
+	--                                                                
+
+    padlockmgr.setdirectionhint(this)
+
+    local split_fx = childbyoid(305)
+    split_fx:addtoworld()
+    childbyoid(306):addtoworld()
+    split_fx:reset()
+    split_fx:start()
+
+    --                              
+    audio.postevent("Play_Tornado_GrowthTargetReached")
+
+    --                  
+    audio.postevent("Play_Tornado_Merge")
+
+    --                      
+    childbyoid(308):dispatchlabel("fxballshow")
+
+  elseif (label == "hide") then
+
+    --                         
+    local split_fx = childbyoid(305)
+    split_fx:stop()
+    split_fx:removefromworld()
+    childbyoid(306):removefromworld()
+    childbyoid(307):removefromworld()
+    this:removefromworld()
+    
+    --                                         
+    childbyoid(308):dispatchlabel(label)
+
+    --                        
+    childbyoid(308):dispatchlabel("fxballhide")
+
+  elseif (label == "training_closed") then
+    childbyoid(308):dispatchlabel("closed")
+  elseif (label == "training_open") then
+    childbyoid(308):dispatchlabel("open")
+  elseif (label == "training_hide") then
+    --                         
+    local split_fx = childbyoid(305)
+    split_fx:stop()
+    split_fx:removefromworld()
+    childbyoid(306):removefromworld()
+    childbyoid(307):removefromworld()
+
+    --                        
+    childbyoid(308):dispatchlabel("fxballhide")
+  end
+
+end

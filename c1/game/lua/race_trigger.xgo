@@ -1,0 +1,126 @@
+function setgear_fx(gear)
+  if gear >= 0 then
+    childbyoid(332):reset()
+    childbyoid(332):start()
+    childbyoid(333):reset()
+    childbyoid(333):start()
+  else
+    childbyoid(332):stop()
+    childbyoid(333):stop()
+  end
+
+  if gear >= 1 then
+    childbyoid(334):reset()
+    childbyoid(334):start()
+    childbyoid(335):reset()
+    childbyoid(335):start()
+  else
+    childbyoid(334):stop()
+    childbyoid(335):stop()
+  end
+
+  if gear >= 2 then
+    childbyoid(336):reset()
+    childbyoid(336):start()
+    childbyoid(337):reset()
+    childbyoid(337):start()
+  else
+    childbyoid(336):stop()
+    childbyoid(337):stop()
+  end
+end
+
+function stopgearfx()
+  childbyoid(332):hardstop()
+  childbyoid(332):reset()
+  childbyoid(333):hardstop()
+  childbyoid(333):reset()
+  childbyoid(334):hardstop()
+  childbyoid(334):reset()
+  childbyoid(335):hardstop()
+  childbyoid(335):reset()
+  childbyoid(336):hardstop()
+  childbyoid(336):reset()
+  childbyoid(337):hardstop()
+  childbyoid(337):reset()
+end
+
+function setgear_mesh(gear)
+  if gear >= 0 then
+    childbyoid(328):setvisiblefromatomid(2016, true)
+  else
+    childbyoid(328):setvisiblefromatomid(2016, false)
+  end
+
+  if gear >= 1 then
+    childbyoid(328):setvisiblefromatomid(2017, true)
+  else
+    childbyoid(328):setvisiblefromatomid(2017, false)
+  end
+
+  if gear >= 2 then
+    childbyoid(328):setvisiblefromatomid(2018, true)
+  else
+    childbyoid(328):setvisiblefromatomid(2018, false)
+  end
+end
+
+function flare_fx(gear)
+  if gear >= 0 then
+    childbyoid(338):reset()
+    childbyoid(338):start()
+    childbyoid(339):reset()
+    childbyoid(339):start()
+  end
+
+  if gear >= 1 then
+    childbyoid(340):reset()
+    childbyoid(340):start()
+    childbyoid(341):reset()
+    childbyoid(341):start()
+  end
+
+  if gear >= 2 then
+    childbyoid(342):reset()
+    childbyoid(342):start()
+    childbyoid(343):reset()
+    childbyoid(343):start()
+  end
+end
+
+function stopallfx()
+  childbyoid(338):hardstop()
+  childbyoid(338):reset()
+  childbyoid(339):hardstop()
+  childbyoid(339):reset()
+  childbyoid(340):hardstop()
+  childbyoid(340):reset()
+  childbyoid(341):hardstop()
+  childbyoid(341):reset()
+  childbyoid(342):hardstop()
+  childbyoid(342):reset()
+  childbyoid(343):hardstop()
+  childbyoid(343):reset()
+  childbyoid(326):hardstop()
+  childbyoid(326):reset()
+  childbyoid(327):hardstop()
+  childbyoid(327):reset()
+end
+
+function on_raceaction(label, gear)
+  if label == "setgear" then
+--                       
+  elseif label == "gatedestroyed" then
+    childbyoid(344):reset()
+    childbyoid(344):start()
+    childbyoid(344).particlesizepercentadjustment = 3.0
+  elseif label == "activategearfx" then
+    setgear_fx(gear)
+  elseif label == "activateflarefx" then
+    flare_fx(gear)
+  elseif label == "stopgearfx" then
+    stopgearfx()
+  elseif label == "stopallfx" then
+    stopallfx()
+  end
+end

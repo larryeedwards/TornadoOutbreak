@@ -1,0 +1,4 @@
+  if animtag == "hitground" then
+    parent:activateshockwave()
+  end
+end

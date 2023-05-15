@@ -1,0 +1,81 @@
+--                                      
+--                                 
+--                               
+--                                                 
+
+--                                              
+--                                      
+--                       
+--                       
+--                    
+--              
+--                                              
+
+lightsets = {
+	{
+		id = 4,
+		name = 'default',
+		sunscreencolor = {3.00,1.00,10.00,255.00,},
+		sunbrightencolor = {92.00,54.00,29.00,255.00,},
+		shadowmultcolor = {178.00,179.00,247.00,255.00,},
+		fogstartz = 22000,
+		fogendz = 150000,
+		fogcolor = {167.00,111.00,217.00,255.00,},
+		fogtype = 'LINEAR',
+		circleofconfusion = 4,
+		focusdist = 600,
+		focusrange = 24000,
+		lights = 
+		{
+			{id = 0,enabled = true,startson = true,type = 'PLAYER',usage = 'PRIMARY',name = 'Light0',position = {0.00,0.00,0.00,},diffuse = {215.00,250.00,249.00,255.00,},ambient = {36.00,34.00,34.00,255.00,},azim = 55,elev = 30,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 1,enabled = true,startson = true,type = 'PLAYER',usage = 'SECONDARY',name = 'Light1',position = {0.00,0.00,0.00,},diffuse = {193.00,193.00,224.00,255.00,},ambient = {75.00,75.00,75.00,255.00,},azim = -120,elev = 0,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 2,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'SUN',name = 'Light2',position = {0.00,0.00,0.00,},diffuse = {250.00,174.00,97.00,255.00,},ambient = {78.00,95.00,105.00,255.00,},azim = 295,elev = -118,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 3,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'SHADOW',name = 'Light3',position = {0.00,0.00,0.00,},diffuse = {250.00,169.00,77.00,255.00,},ambient = {107.00,107.00,150.00,255.00,},azim = -215,elev = 196.6083,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 4,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'FILL',name = 'Light4',position = {0.00,0.00,0.00,},diffuse = {247.00,172.00,59.00,255.00,},ambient = {0.00,0.00,0.00,255.00,},azim = 265,elev = 165,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+		},
+	},
+	{
+		id = 5,
+		name = 'mission',
+		sunscreencolor = {3.00,1.00,10.00,255.00,},
+		sunbrightencolor = {107.00,53.00,19.00,255.00,},
+		shadowmultcolor = {189.00,180.00,250.00,255.00,},
+		fogstartz = 22000,
+		fogendz = 150000,
+		fogcolor = {117.00,76.00,36.00,255.00,},
+		fogtype = 'LINEAR',
+		circleofconfusion = 4,
+		focusdist = 600,
+		focusrange = 24000,
+		lights = 
+		{
+			{id = 0,enabled = true,startson = true,type = 'PLAYER',usage = 'PRIMARY',name = 'Light0',position = {0.00,0.00,0.00,},diffuse = {215.00,250.00,249.00,255.00,},ambient = {36.00,34.00,34.00,255.00,},azim = 55,elev = 30,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 1,enabled = true,startson = true,type = 'PLAYER',usage = 'SECONDARY',name = 'Light1',position = {0.00,0.00,0.00,},diffuse = {193.00,193.00,224.00,255.00,},ambient = {75.00,75.00,75.00,255.00,},azim = -120,elev = 0,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 2,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'SUN',name = 'Light2',position = {0.00,0.00,0.00,},diffuse = {242.00,197.00,124.00,255.00,},ambient = {87.00,78.00,105.00,255.00,},azim = 85,elev = -118,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 3,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'SHADOW',name = 'Light3',position = {0.00,0.00,0.00,},diffuse = {232.00,158.00,39.00,255.00,},ambient = {103.00,136.00,145.00,255.00,},azim = 60,elev = 236.6083,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 4,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'FILL',name = 'Light4',position = {0.00,0.00,0.00,},diffuse = {47.00,113.00,120.00,255.00,},ambient = {0.00,0.00,0.00,255.00,},azim = 260,elev = 135,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+		},
+	},
+	{
+		id = 6,
+		name = 'dino',
+		sunscreencolor = {3.00,1.00,10.00,255.00,},
+		sunbrightencolor = {107.00,53.00,19.00,255.00,},
+		shadowmultcolor = {171.00,164.00,235.00,255.00,},
+		fogstartz = 800,
+		fogendz = 150000,
+		fogcolor = {194.00,146.00,99.00,255.00,},
+		fogtype = 'LINEAR',
+		circleofconfusion = 4,
+		focusdist = 600,
+		focusrange = 24000,
+		lights = 
+		{
+			{id = 0,enabled = true,startson = true,type = 'PLAYER',usage = 'PRIMARY',name = 'Light0',position = {0.00,0.00,0.00,},diffuse = {215.00,250.00,249.00,255.00,},ambient = {36.00,34.00,34.00,255.00,},azim = 55,elev = 30,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 1,enabled = true,startson = true,type = 'PLAYER',usage = 'SECONDARY',name = 'Light1',position = {0.00,0.00,0.00,},diffuse = {193.00,193.00,224.00,255.00,},ambient = {75.00,75.00,75.00,255.00,},azim = -120,elev = 0,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 2,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'SUN',name = 'Light2',position = {0.00,0.00,0.00,},diffuse = {242.00,202.00,138.00,255.00,},ambient = {87.00,78.00,105.00,255.00,},azim = 100,elev = -128,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 3,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'SHADOW',name = 'Light3',position = {0.00,0.00,0.00,},diffuse = {250.00,161.00,17.00,255.00,},ambient = {96.00,119.00,125.00,255.00,},azim = -195,elev = 256.6083,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+			{id = 4,enabled = true,startson = true,type = 'DIRECTIONAL',usage = 'FILL',name = 'Light4',position = {0.00,0.00,0.00,},diffuse = {43.00,121.00,130.00,255.00,},ambient = {0.00,0.00,0.00,255.00,},azim = 275,elev = 150,angleinner = 0,angleouter = 0,radiusinner = 1,radiusouter = 1,},
+		},
+	},
+}

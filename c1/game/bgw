@@ -1,0 +1,27 @@
+on_postload
+CAtomMgr
+CStringTable
+load
+reload
+unload
+GetFilename
+GetGoWorld
+world
+world.load
+world.reload
+world.unload
+.bgw
+Go Class Info - (%d/%d)
+Template - %d (%d/%d)
+Game Object Instance - %d (%d/%d)
+Enums Signature (%d/%d)
+Atom Maps - %d (%d/%d)
+String Table - (%d/%d)
+Oid Table (%d/%d)
+Substystem Attributes - %d (%d/%d)
+Loading Screen Assets - %d (%d/%d)
+Atom Names (Debug) - %d (%d/%d)
+Template: Texture - (%d/%d)
+Template: Graphics Model - (%d/%d)
+Template: Vector Graphics Model - (%d/%d)
+Template: FX - (%d/%d)‚

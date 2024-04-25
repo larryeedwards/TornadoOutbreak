@@ -1,9 +1,0 @@
-function on_growmissiontimeout()
-	beginwait()
-		uimgr.playoutoftime();
-	endwait()
-  
-	cameramgr.screenfade(0, 0.7, 0.25, 1.0)
-	pause(0.8)
-  
-end

@@ -1,3 +1,5 @@
+weatherstuff1 = {}
+
 function on_postload()
     weatherstuff1[1] = gomgr.getbyoid(353)
     weatherstuff1[2] = gomgr.getbyoid(361)

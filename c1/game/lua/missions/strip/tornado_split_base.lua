@@ -3,27 +3,27 @@ function on_label(label)
 	--                                         
 	
 	--                         
-    childbyoid(276):addtoworld()
+    childbyoid(380):addtoworld()
     this:addtoworld()
 
     --                                             
-    childbyoid(277):dispatchlabel(label)
-    childbyoid(277):dispatchlabel("opened")
+    childbyoid(381):dispatchlabel(label)
+    childbyoid(381):dispatchlabel("opened")
 
   elseif label == "found" then
     --                                                                                
 
     --                                         
-    childbyoid(277):dispatchlabel(label)
+    childbyoid(381):dispatchlabel(label)
  
   elseif (label == "show") then
 	--                                                                
 
     padlockmgr.setdirectionhint(this)
 
-    local split_fx = childbyoid(274)
+    local split_fx = childbyoid(378)
     split_fx:addtoworld()
-    childbyoid(275):addtoworld()
+    childbyoid(379):addtoworld()
     split_fx:reset()
     split_fx:start()
 
@@ -34,38 +34,38 @@ function on_label(label)
     audio.postevent("Play_Tornado_Merge")
 
     --                      
-    childbyoid(277):dispatchlabel("fxballshow")
+    childbyoid(381):dispatchlabel("fxballshow")
 
   elseif (label == "hide") then
 
     --                         
-    local split_fx = childbyoid(274)
+    local split_fx = childbyoid(378)
     split_fx:stop()
     split_fx:removefromworld()
-    childbyoid(275):removefromworld()
-    childbyoid(276):removefromworld()
+    childbyoid(379):removefromworld()
+    childbyoid(380):removefromworld()
     this:removefromworld()
     
     --                                         
-    childbyoid(277):dispatchlabel(label)
+    childbyoid(381):dispatchlabel(label)
 
     --                        
-    childbyoid(277):dispatchlabel("fxballhide")
+    childbyoid(381):dispatchlabel("fxballhide")
 
   elseif (label == "training_closed") then
-    childbyoid(277):dispatchlabel("closed")
+    childbyoid(381):dispatchlabel("closed")
   elseif (label == "training_open") then
-    childbyoid(277):dispatchlabel("open")
+    childbyoid(381):dispatchlabel("open")
   elseif (label == "training_hide") then
     --                         
-    local split_fx = childbyoid(274)
+    local split_fx = childbyoid(378)
     split_fx:stop()
     split_fx:removefromworld()
-    childbyoid(275):removefromworld()
-    childbyoid(276):removefromworld()
+    childbyoid(379):removefromworld()
+    childbyoid(380):removefromworld()
 
     --                        
-    childbyoid(277):dispatchlabel("fxballhide")
+    childbyoid(381):dispatchlabel("fxballhide")
   end
 
 end

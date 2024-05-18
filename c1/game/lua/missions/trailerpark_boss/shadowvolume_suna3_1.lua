@@ -1,0 +1,1 @@
+function trackingsetup()  tracked = gomgr.getbyoid(330)  trackstart()end

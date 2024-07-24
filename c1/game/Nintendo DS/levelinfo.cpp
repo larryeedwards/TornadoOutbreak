@@ -1,7 +1,9 @@
+//**** LEVELS
 //This List is for which level file goes with which region/location/sublevel.
 //Open Level Macros.h to see a list of all possible values.
-//To add a new leve use ADD_LEVEL INFO(region, location, tornadoSize, level filename, USE_OBJECTIVES (name), dollar amount to win level)
-//If you do not have any //Note Objectives must be setup before the level stuff.
+//To add a new leve use ADD_LEVEL INFO(region, location, tornadoSize, level filename, USE_OBJECTIVES(name), dollar amount to win level)
+//If you do not have any 
+//Note - Objectives must be setup before the level stuff.
 //All levels must be contained between the Start and End.
 START_LEVEL_INFO
 ADD_LEVEL_INFO(REGION_MIDWEST, LOCATION_FARM, SUBLEVEL_SMALL, "FarmSmall.fmsb", USE_OBJECTIVES(ObjListLevelFarmSmall), 100)

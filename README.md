@@ -4,7 +4,7 @@ Open Source code from the 2009 action adventure video game, Tornado Outbreak.
 # Notes
 * All code were extracted from the game's .bgw files using SamuraiOndo's bgw unpacker.
 * This repository only deals with the Lua aspect of the game!
-* A few snippets of source code for the cancelled Nintendo DS port is included, though incomplete.
+* A few snippets of source code for the cancelled Nintendo DS port is included, though incomplete. It has no purpose other than for archival and reference purposes only.
 
 # Future plans/wishes
 ### C++ decompilation 

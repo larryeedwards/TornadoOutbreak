@@ -19,28 +19,26 @@ function on_postload()
     weatherstuff1[16] = gomgr.getbyoid(387)
     weatherstuff1[17] = gomgr.getbyoid(388)
     weatherstuff1[18] = gomgr.getbyoid(389)
-  end
-  
-  function addphase1()
+end
+
+function addphase1()
     for i = 1, #weatherstuff1 do
-      (weatherstuff1[i]):addtoworld()
+        (weatherstuff1[i]):addtoworld()
     end
-  end
-  
-  function removephase1()
+end
+
+function removephase1()
     for i = 1, #weatherstuff1 do
-      (weatherstuff1[i]):removefromworld()
+        (weatherstuff1[i]):removefromworld()
     end
-  end
-  
-  
-  function on_label(label)
+end
+
+function on_label(label)
     if label == "weatherphase0" then
-      this.curphase = 0
+        this.curphase = 0
     end
-  
+
     if label == "weatherphase1" then
-      this.curphase = 1
+        this.curphase = 1
     end
-  
-  end
+end

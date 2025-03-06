@@ -1,6 +1,4 @@
 # Contributing Guidelines
-Thank you for your interest in contributing to the reverse engineering efforts for Tornado Outbreak. 
-By following these guidelines, you can help improve our understanding of the game and contribute to the community's knowledge base. 
 Please read these guidelines carefully before making any contributions.
 # Getting Started
 ### Decompressing Game Files
